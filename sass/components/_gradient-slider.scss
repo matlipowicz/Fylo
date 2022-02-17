@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+// !SLIDER --> TO COMPONENTS
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    background-image: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+
+    height: 1.5rem;
+    width: 70%;
+    border-radius: 2rem;
+    animation-name: loading;
+    animation-duration: 2s;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+
+        background-color: var(--color-white);
+        border-radius: 50%;
+        margin-right: 0.2rem;
+    }
+
+    &--shadow {
+        display: flex;
+        align-items: center;
+
+        background-color: var(--color-blue-vdark);
+
+        width: 100%;
+        border-radius: 2rem;
+        padding: 0.3rem;
+        margin: 2rem 0 1.5rem 0;
+    }
+}

@@ -1,0 +1,53 @@
+@use "../abstracts" as *;
+
+// RESET FILE
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 10/16px = 62.5% --> 1rem
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: var(--color-blue-dark);
+    font-family: "Lato", sans-serif;
+    color: #fff;
+
+    background: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include fylo(tab-land) {
+        background-image: url(../../images/bg-desktop.png);
+        background-position: bottom;
+        background-size: 100% 55%;
+        background-color: var(--color-blue-vdark);
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+
+    a {
+        text-decoration: none;
+        color: var(--color-blue-lighter);
+    }
+}

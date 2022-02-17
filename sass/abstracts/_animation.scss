@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+// SLIDER LOADER
+
+@keyframes loading {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+// STORAGE FILLING
+
+@keyframes storage {
+    from {
+        color: var(--color-white);
+    }
+
+    to {
+        color: var(--color-red);
+    }
+}

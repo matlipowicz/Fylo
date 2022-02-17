@@ -1,0 +1,35 @@
+// COLORS
+
+:root {
+    // Base colors
+
+    --color-blue-light: hsl(243, 100%, 93%);
+    --color-blue-lighter: hsl(231, 47%, 57%);
+    --color-blue-gray: hsl(229, 7%, 55%);
+    --color-blue-dark: hsl(228, 56%, 26%);
+    --color-blue-vdark: hsl(229, 57%, 11%);
+    --color-white: hsl(250, 100%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-white: hsl(250, 100%, 100%);
+    --color-red: hsl(9, 100%, 60%);
+
+    // Gradient
+
+    --color-gradient-1: hsl(6, 100%, 80%);
+    --color-gradient-2: hsl(335, 100%, 65%);
+}
+
+// $color-blue-light: hsl(243, 100%, 93%);
+// $color-blue-lighter: hsl(231, 47%, 57%);
+// $color-blue-gray: hsl(229, 7%, 55%);
+// $color-blue-dark: hsl(228, 56%, 26%);
+// $color-blue-vdark: hsl(229, 57%, 11%);
+// $color-white: hsl(250, 100%, 100%);
+// $color-black: hsl(0, 0%, 0%);
+
+// FONT
+
+$bf: 1.4rem; // base font
+
+$fw-l: 400; // font-weight light
+$fw-b: 700; // font-weight bold

@@ -1,0 +1,153 @@
+@use "../abstracts" as *;
+
+//CARD STYLES
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 100%;
+    max-width: 35rem;
+
+    &--1 {
+        @include fylo(tab-land) {
+            flex-basis: 30%;
+        }
+    }
+
+    &--2 {
+        position: relative;
+        @include fylo(tab-land) {
+            flex-basis: 70%;
+            max-width: 60rem;
+        }
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+
+    background-color: var(--color-blue-dark);
+
+    margin-bottom: 2rem;
+    padding: 4rem;
+    border-radius: 1rem 8rem 1rem 1rem;
+
+    @include fylo(tab-land) {
+        margin-bottom: 0;
+    }
+
+    //  LOGO
+
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    &__icon {
+        fill: var(--color-white);
+        height: 6rem;
+        width: 10rem;
+
+        @include fylo(tab-land) {
+            width: 13rem;
+        }
+    }
+
+    //  ICONS
+
+    &__icon-grid {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        fill: var(--color-blue-lighter);
+    }
+
+    &__icons {
+        background-color: var(--color-blue-vdark);
+        padding: 1rem;
+        border-radius: 0.8rem;
+
+        & > * {
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+}
+
+// BOTTOM CARD
+
+.bottom {
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: var(--color-blue-dark);
+    color: var(--color-blue-light);
+    font-weight: $fw-l;
+
+    span {
+        font-weight: $fw-b;
+    }
+
+    &__storage {
+        display: flex;
+        justify-content: space-between;
+
+        &-right {
+            color: var(--color-red);
+            animation-name: storage;
+            animation-duration: 2s;
+        }
+    }
+
+    // LABEL
+
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+
+        background-color: var(--color-white);
+        padding: 1rem;
+        width: 50%;
+        border-radius: 1rem;
+        color: var(--color-black);
+
+        transform: translate(50%, -3rem);
+
+        &--1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        &--2 {
+            color: var(--color-blue-gray);
+        }
+
+        @include fylo(tab-land) {
+            max-width: 18rem;
+            border-bottom-right-radius: 0;
+
+            position: absolute;
+            top: 0;
+            right: 15rem;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 2rem;
+                height: 2rem;
+                background-color: var(--color-white);
+                clip-path: polygon(0 0, 100% 100%, 100% 0);
+
+                position: absolute;
+
+                transform: translate(8rem, 3.5rem);
+            }
+        }
+    }
+}
