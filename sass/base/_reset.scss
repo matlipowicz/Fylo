@@ -32,10 +32,10 @@ body {
     background-size: cover;
 
     @include fylo(tab-land) {
-        // background-color: var(--color-blue-vdark);
-        // background-image: url(../../images/bg-desktop.png);
+        background-color: var(--color-blue-vdark);
+        background-image: url(../../images/bg-desktop.png);
 
-        background: url(../../images/bg-desktop.png), var(--color-blue-vdark);
+        // background: url(../../images/bg-desktop.png), var(--color-blue-vdark);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100% 55%;
