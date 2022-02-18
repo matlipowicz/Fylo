@@ -75,10 +75,10 @@ body {
 }
 @media only screen and (min-width: 50em) {
   body {
-    background-image: url(../../images/bg-desktop.png);
+    background: url(../../images/bg-desktop.png), var(--color-blue-vdark);
+    background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 55%;
-    background-color: var(--color-blue-vdark);
   }
 }
 
